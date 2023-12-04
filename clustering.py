@@ -8,7 +8,7 @@ from numpy import unique
 from matplotlib import pyplot
 
 # імпортуємо датасет
-dataset = pd.read_excel(r"C:\Users\podlo\OneDrive\Документы\__learn_aspirantura_kneu\_4_semestr\2023-11-20_bigdata\dataset_clustering.xlsx")
+dataset = pd.read_excel(r"C:\Users\podlo\OneDrive\Документы\__learn_aspirantura_kneu\_4_semestr\obrobka_ta_analiz_big_data\2023-11-20_bigdata\dataset_clustering.xlsx")
 
 # переглядаємо датасет
 print(dataset.shape)

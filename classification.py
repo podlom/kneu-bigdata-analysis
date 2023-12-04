@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 # імпортуємо датасет
-dataset = pd.read_excel(r"C:\Users\podlo\OneDrive\Документы\__learn_aspirantura_kneu\_4_semestr\2023-11-20_bigdata\dataset_classification.xlsx")
+dataset = pd.read_excel(r"C:\Users\podlo\OneDrive\Документы\__learn_aspirantura_kneu\_4_semestr\obrobka_ta_analiz_big_data\2023-11-20_bigdata\dataset_classification.xlsx")
 
 # переглядаємо датасет
 dataset.shape
@@ -23,7 +23,7 @@ while i<len(dataset):
 data_y = dataset['capital_intencity_growh'].astype(float).values
 data_x = dataset.select_dtypes(exclude=['object']).values
 
-#розбиваємо вибірки даних на тестову та трейнову
+# розбиваємо вибірки даних на тестову та трейнову
 from sklearn.model_selection import train_test_split
 train_x, test_x, train_y, test_y = train_test_split(data_x, data_y, test_size = 0.2, random_state=42)
 

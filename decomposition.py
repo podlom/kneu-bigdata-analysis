@@ -11,7 +11,7 @@ color = sns.color_palette()
 import matplotlib as mpl
 
 # імпортуємо датасет
-dataset = pd.read_excel(r"C:\Users\podlo\OneDrive\Документы\__learn_aspirantura_kneu\_4_semestr\2023-11-20_bigdata\dataset_decomposition.xlsx")
+dataset = pd.read_excel(r"C:\Users\podlo\OneDrive\Документы\__learn_aspirantura_kneu\_4_semestr\obrobka_ta_analiz_big_data\2023-11-20_bigdata\dataset_decomposition.xlsx")
 
 # переглядаємо датасет
 print(dataset.shape)

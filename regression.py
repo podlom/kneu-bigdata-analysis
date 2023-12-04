@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 
-#функції метрик якості
+# функції метрик якості
 def RMSE(y_test, y_pred):
     return (sum((y_test - y_pred)**2)/len(y_test))**(0.5)
 def MAE(y_test, y_pred):
@@ -11,7 +11,7 @@ def mape(y_test, y_pred):
     return np.mean(np.abs((y_test+1 - y_pred) / (y_test+1))) * 100
 
 # імпортуємо датасет
-dataset = pd.read_excel(r"C:\Users\podlo\OneDrive\Документы\__learn_aspirantura_kneu\_4_semestr\2023-11-20_bigdata\dataset_regression.xlsx")
+dataset = pd.read_excel(r"C:\Users\podlo\OneDrive\Документы\__learn_aspirantura_kneu\_4_semestr\obrobka_ta_analiz_big_data\2023-11-20_bigdata\dataset_regression.xlsx")
 
 # переглядаємо датасет
 print(dataset.shape)
